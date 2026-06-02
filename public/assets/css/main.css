@@ -12,6 +12,78 @@
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
+
+/*Login*/
+
+    .login-bg {
+      background: linear-gradient(rgba(45, 40, 35, 0.85), rgba(30, 30, 30, 0.95)), 
+                  url('public/assets/img/hero-bg.jpg') no-repeat center center / cover;
+      min-height: 100vh;
+      color: #ffffff;
+    }
+
+  
+    .btn-dovi {
+      background-color: #e9810a !important;
+      border-color: #e9810a !important;
+      color: #ffffff !important;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-dovi:hover {
+      background-color: #cc6f05 !important;
+      border-color: #cc6f05 !important;
+      box-shadow: 0 4px 10px rgba(233, 129, 10, 0.3);
+    }
+
+   
+    .form-control-dovi {
+      background-color: rgba(255, 255, 255, 0.08) !important;
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+      color: #ffffff !important;
+    }
+
+    .form-control-dovi::placeholder {
+      color: rgba(255, 255, 255, 0.4) !important;
+    }
+
+    .form-control-dovi:focus {
+      background-color: rgba(255, 255, 255, 0.12) !important;
+      border-color: #e9810a !important;
+      box-shadow: 0 0 0 0.25rem rgba(233, 129, 10, 0.25) !important;
+      color: #ffffff !important;
+    }
+
+    /* Iconos del input-group con el mismo estilo */
+    .input-group-text.form-control-dovi {
+      border-right: none !important;
+    }
+    
+    .form-control.form-control-dovi {
+      border-left: none !important;
+    }
+
+    .text-orange {
+      color: #e9810a !important;
+    }
+
+    /* Línea decorativa naranja */
+    .linea-decorativa {
+      width: 50px;
+      height: 3px;
+      background-color: #e9810a;
+      margin: 10px auto 0 auto;
+    }
+
+    .logo-img {
+      height: 40px;
+    }
+
+    .pointer-click {
+      cursor: pointer;
+    }
+
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
