@@ -1,0 +1,27 @@
+<?php
+
+class Database
+{
+    private $host = "localhost";
+    private $dbname = "drappsco_dovi_sas";
+    private $username = "dodino";
+    private $password = "Dodino1606";
+
+    public function conectar()
+    {
+        try {
+            $conexion = new PDO(
+                "mysql:host={$this->host};dbname={$this->dbname};charset=utf8",
+                $this->username,
+                $this->password
+            );
+
+            $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            
+            return $conexion;
+
+        } catch (PDOException $e) {
+            die("Error de conexión: " . $e->getMessage());
+        }
+    }
+}
